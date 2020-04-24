@@ -1,0 +1,102 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  padding-left: 20px;
+}
+
+#refinePets {
+  display: flex;
+  list-style: none;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#refinePets a {
+  display: block;
+  width: 100px;
+  height: 35px;
+  margin: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+#onlyDogs {
+  background-color: #4db3d7;
+}
+
+.dog footer {
+  background-color: #D1E9F5;
+  color: #4db3d7;
+}
+
+#onlyCats {
+  background-color: #4EAD49;
+}
+
+.cat footer {
+  background-color: #d8edcf;
+  color: #4EAD49;
+}
+
+#onlyBirds {
+  background-color: #EB9E3E;
+}
+
+.bird footer {
+  background-color: #fcf7dc;
+  color: #EB9E3E;
+}
+
+#pets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.petCards {
+  padding: 0;
+  min-width: 250px;
+  width: 30%;
+  margin: 20px 20px;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.petCards header {
+  background-color: #EAEAEA;
+  color: #878787;
+  padding: .5em;
+  font-size: large;
+}
+
+.petCards footer {
+  padding: .5em;
+  font-size: large;
+  flex-shrink: 0;
+}
+
+.petCards img {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+  object-fit: cover;
+}
