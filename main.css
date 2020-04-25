@@ -15,7 +15,8 @@ h1 {
   justify-content: center;
 }
 
-#refinePets a {
+#refinePets li {
+  cursor: pointer;
   display: block;
   width: 100px;
   height: 35px;
@@ -47,6 +48,10 @@ h1 {
 
 #onlyBirds {
   background-color: #EB9E3E;
+}
+
+#showAll {
+  background-color: darkgray;
 }
 
 .bird footer {

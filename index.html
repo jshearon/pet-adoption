@@ -10,9 +10,10 @@
 <body>
   <h1 class="title">Adopt a Pet!</h1>
   <ul id="refinePets">
-    <li class="petSelect"><a href="#" id="onlyDogs">Dogs</a></li>
-    <li class="petSelect"><a href="#" id="onlyCats">Cats</a></li>
-    <li class="petSelect"><a href="#" id="onlyBirds">Birds</a></li>
+    <li id="onlyDogs" class="petSelect" data-animal-type="dog">Dogs</li>
+    <li id="onlyCats" class="petSelect" data-animal-type="cat">Cats</li>
+    <li id="onlyBirds" class="petSelect" data-animal-type="bird">Birds</li>
+    <li id="showAll" class="petSelect" data-animal-type="all">Show All</li>
   </ul>
   <div id="pets"></div>
   <script src="main.js"></script>

@@ -56,8 +56,36 @@ const createPetDivs = (array) => {
   printDomString('#pets', domString);
 }
 
+//function that loops through divs and changes display based on click
+const showHideDivs = (divClass, clickedId) => {
+  let divs = document.getElementsByClassName(divClass);
+  console.log(clickedId);
+  for (i = 0; i < divs.length; i++) {
+    if (clickedId == "all") {
+      divs[i].style.display = "block";
+    } else {
+      if (divs[i].className.includes(clickedId)) {
+        divs[i].style.display = "block";
+      } else {
+        divs[i].style.display = "none";
+      }
+    }
+  }
+}
+
+//programatically create event listeners
+const createListeners = (menuId, targetDivClass) => {
+  const menuItems = document.querySelector(menuId).children;
+    for (i=0; i < menuItems.length; i++) {
+      document.getElementById(menuItems[i].id).addEventListener("click", function() {
+        showHideDivs(targetDivClass, this.dataset.animalType)
+      }, false);
+    }
+}
+
 const init = () => {
   createPetDivs(pets);
+  createListeners("#refinePets", "petCards");
 }
 
 init();
