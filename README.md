@@ -8,9 +8,9 @@ A class exercise that uses javascript to popluate an HTML container with bootstr
 
 To run the project simply clone it and run `index.html` with any http server.
 
-##Technolgies Used
+## Technolgies Used
 
-*HTML
-*CSS
-*Javascript
-*Bootstrap
+* HTML
+* CSS
+* Javascript
+* Bootstrap
